@@ -45,6 +45,26 @@ fields:
   default: "#B1BCBC"
 - name: details
   type: field_group_list
+  fields:
+  - name: day
+    type: text
+    config:
+      required: false
+    label: Day
+  - name: city
+    type: text
+    config:
+      required: false
+    label: City
+  - name: particular_
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: 'Particular '
   config:
     min: 
     max: 
